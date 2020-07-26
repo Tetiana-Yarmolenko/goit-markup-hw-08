@@ -1,6 +1,14 @@
 /*ПЕРЕВАГИ*/
 .feature-list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: -15px;
+  }
 }
 
 /*картинка*/
@@ -13,8 +21,6 @@
   margin-bottom: 30px;
   padding: 25px 100px;
   border-radius: 4px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
   background: $feature-icon-color;
 }
 .features-icon {
@@ -25,14 +31,22 @@
 /*текст*/
 
 .feature-list .feature-item {
-  width: calc((100% - 30px * 3) / 4);
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+
   &:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 }
-// .list .feature-item:not(:last-child) {
-//   margin-right: 30px;
-// }
 
 /*заголовки h3*/
 .title {

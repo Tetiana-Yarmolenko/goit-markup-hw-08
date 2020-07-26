@@ -1,5 +1,9 @@
 /*список Чем мы занимаемся*/
-
+.section.do {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .do-list {
   display: flex;
   align-items: center;

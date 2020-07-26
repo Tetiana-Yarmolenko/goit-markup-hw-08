@@ -1,20 +1,22 @@
 /* Форма для модального вікна*/
 .form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  min-width: 528px;
-
   padding: 40px;
   background-color: $primary-white-color;
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms $timing-function;
-  &-field {
-    position: relative;
-    display: block;
-    margin-bottom: 28px;
+    width: 100%;
+    max-width: 528px;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms $timing-function;
+    &-field {
+      position: relative;
+      display: block;
+      margin-bottom: 28px;
+    }
   }
 }
 
@@ -158,6 +160,7 @@ input [type="checkbox"] {
   border-radius: 50%;
   width: 30px;
   height: 30px;
+  outline: none;
 
   &:hover .icon-close,
   &:focus .icon-close {

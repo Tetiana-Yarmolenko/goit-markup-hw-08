@@ -2,6 +2,7 @@
 .socials {
   display: flex;
   align-items: center;
+  justify-content: center;
   list-style: none;
   &__item:not(:last-child) {
     margin-right: 10px;
@@ -36,6 +37,7 @@
 .socials__link.footer {
   color: $primary-white-color;
   display: inline-flex;
+
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 44px;
