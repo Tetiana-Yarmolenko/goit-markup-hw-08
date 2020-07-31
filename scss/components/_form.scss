@@ -2,13 +2,16 @@
 .form {
   padding: 40px;
   background-color: $primary-white-color;
-  // @media (min-width: 768px) {
+
   position: absolute;
   top: 50%;
   left: 50%;
 
   width: 100%;
-  max-width: 528px;
+  min-width: 450px;
+  @media (min-width: 1200px) {
+    max-width: 528px;
+  }
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $timing-function;
@@ -16,7 +19,6 @@
     position: relative;
     display: block;
     margin-bottom: 28px;
-    // }
   }
 }
 
@@ -25,6 +27,8 @@
   top: 50%;
   left: 42px;
   transform: translateY(-50%);
+  line-height: 1.14px;
+  letter-spacing: 0.01em;
 
   transition: transform 250ms $timing-function, color 250ms $timing-function;
   color: $title-text-color;
@@ -37,6 +41,8 @@
   padding: 11px 16px;
   padding-left: 42px;
   font: inherit;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -125,8 +131,11 @@ input [type="checkbox"] {
 }
 /*Оформлення чекбокса*/
 .checkbox-form {
-  @include centeredflex($type: flex);
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    @include centeredflex($type: flex);
+  }
+
   .check-icon {
     display: inline-block;
     width: 16px;
@@ -176,5 +185,6 @@ input [type="checkbox"] {
 }
 /*Кнопка отправить*/
 .submit-form {
+  margin-top: 30px;
   text-align: center;
 }

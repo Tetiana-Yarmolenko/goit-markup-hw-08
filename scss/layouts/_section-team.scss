@@ -1,10 +1,6 @@
 /*члены команды*/
 .section-team {
   background-color: $feature-icon-color;
-  @media screen and (max-width: 1199px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 .team__list {
   margin-top: 0;

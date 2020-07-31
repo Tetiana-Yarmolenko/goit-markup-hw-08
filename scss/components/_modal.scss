@@ -22,7 +22,7 @@
 }
 // Позиціювання модального вікна
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) scale(1);
 }
 // Заголовок
 .group-title {
@@ -30,16 +30,22 @@
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 /*Условия договора*/
 .agree {
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 0.85;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.2;
+  }
 
   color: $title-text-color;
 }

@@ -186,7 +186,7 @@ button {
 /*Шапка макета*/
 
 /*список шапки*/
-.main-nav {
+.main-page {
   display: flex;
   align-items: center;
 }
@@ -206,24 +206,24 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-/*"auth-nav*/
-.auth-nav {
+/*"contacts*/
+.contacts {
   display: flex;
   margin-left: auto;
 }
 
-.auth-nav .item + .item {
+.contacts .item + .item {
   margin-left: 30px;
 }
 /*Ховер для Контактів*/
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--akcent-color);
   fill: var(--akcent-color);
 }
 
 /*контакты*/
-.contacts-link {
+.contacts__link {
   display: flex;
   align-items: center;
   padding-top: 10px;

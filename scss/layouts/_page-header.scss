@@ -1,58 +1,71 @@
 /*Шапка макета*/
-
-/*контейнер шапки*/
-.main-nav {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
-  // padding: 10px 0px;
-
-  // width: calc(100% - 30px);
-  // margin: 0px auto 0px;
+.page-header {
+  @media screen and (max-width: 767px) {
+    position: relative;
+  }
 }
 
-// /*"auth-nav*/
-.auth-nav {
-  display: inline-block;
-  text-align: center;
+/*контейнер шапки*/
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  // @media screen and (min-width: 768px) {
-  //   margin-left: 81px;
-  // }
+// /*"Контакти*/
+.contacts.list {
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: auto;
   }
 }
 
-.auth-nav__item + .auth-nav__item {
+// .contacts__item + .contacts__item {
+//   margin-left: 30px;
+// }
+.contacts__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
   @media screen and (min-width: 1200px) {
     margin-left: 30px;
   }
 }
 
-/*контакты*/
+/*контакты стиль для тексту*/
 .contacts-link {
-  display: flex;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
   color: $title-text-color;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
   &:hover,
   &:focus {
     color: $akcent-color;
     fill: $akcent-color;
   }
 }
-
 // Стилі для іконок
 .icon-envelope {
   width: 16px;

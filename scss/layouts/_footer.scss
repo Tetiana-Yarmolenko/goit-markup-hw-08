@@ -10,6 +10,7 @@
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
+    align-items: baseline;
     justify-content: space-around;
   }
   @media screen and (min-width: 1200px) {
@@ -23,19 +24,15 @@
 }
 // Блок1
 .footer-block {
-  // @media screen and (min-width: 768px) {
-  //   padding-top: 60px;
-  //   width: calc(50% - 30px);
-  //   margin-left: auto;
-
-  //   margin-bottom: 60px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   width: calc((50% - 45px) / 2);
-  //   margin-right: 30px;
-  //   padding-top: 60px;
-  //   padding-bottom: 60px;
-  // }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and(min-width: 768px) {
+    width: calc(50% - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((50% - 45px) / 2);
+  }
   .logo {
     display: block;
     margin-bottom: 20px;
@@ -45,28 +42,16 @@
 /*Присоединяйтесь*/
 // Блок 2
 .join-up {
-  @media screen and (max-width: 767px) {
-    margin-top: 60px;
+  @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
-
-    text-align: center;
-    outline: 3px solid tomato;
   }
-  // @media screen and (min-width: 768px) {
-  //   padding-top: 65px;
-  //   width: calc(50% - 30px);
-  //   margin-left: auto;
-
-  //   margin-bottom: 60px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   display: block;
-
-  //   width: calc((50% - 45px) / 2);
-  //   margin-right: 30px;
-  //   padding-top: 72px;
-  //   padding-bottom: 100px;
-  // }
+  @media screen and(min-width: 768px) {
+    width: calc(50% - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((50% - 45px) / 2);
+    text-align: start;
+  }
 }
 .join-text {
   margin-bottom: 20px;
@@ -76,21 +61,19 @@
   line-height: 1.14;
   text-transform: uppercase;
 }
-// .socials.footer {
-//   @media screen and (min-width: 1200px) {
-//     justify-content: flex-start;
-// //   }
-// }
+.socials.footer {
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
+}
 // Блок3
 /*Підписка*/
-// .join-inform {
-//   @media screen and (min-width: 1200px) {
-//     width: calc(50% - 15px);
-//     padding-top: 72px;
-//     padding-bottom: 94px;
-//     display: flex;
-//   }
-// }
+.join-inform {
+  @media screen and (min-width: 1200px) {
+    width: calc(50% - 15px);
+    text-align: start;
+  }
+}
 //іконка в кнопці
 .icon-send {
   display: inline-block;
@@ -107,26 +90,24 @@
 // Форма в футері
 .form-field.join {
   background-color: #2f303a;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  width: 100%;
-  min-width: 358px;
-
-  // @media screen and (max-width: 1199px) {
-  //   margin-bottom: 20px;
-  // }
-
   @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
     margin-right: 12px;
   }
 }
 /*Поле вводу інформ*/
 .join-input.footer {
   background-color: #2f303a;
-
+  width: 100%;
+  max-width: 450px;
+  min-width: 358px;
   height: 50px;
   padding-left: 16px;
 
