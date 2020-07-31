@@ -67,9 +67,9 @@
   border: none;
   outline: none;
   background: $primary-white-color;
-  display: block;
-  margin-left: auto;
-
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
   transition: fill 250ms $timing-function;
 
   &:hover .icon-cross,
