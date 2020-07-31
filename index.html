@@ -164,38 +164,69 @@
           <h2 class="main-title">Чем мы занимаемся</h2>
           <ul class="do-list">
             <li class="do-item">
-              <img
-                srcset="
-                  ./imeges/des-proect9.jpg    370w,
-                  ./imeges/des-proect9@2x.jpg 740w
-                "
-                src="./imeges/mob-proect9.jpg"
-                alt="ноутбук"
-                sizes="(min-width: 1200px) 33vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./imeges/des-proect9.webp    1x,
+                    ./imeges/des-proect9@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./imeges/des-proect9.jpg    1x,
+                    ./imeges/des-proect9@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./imeges/des-proect9.jpg"
+                  alt="Открытый ноутбук"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <h3 class="do-title">Десктопные приложения</h3>
             </li>
 
             <li class="do-item">
-              <img
-                srcset="./imeges/box.jpg 370w, ./imeges/box@2x.jpg 740w"
-                src="./imeges/box.jpg"
-                alt="смартфон"
-                sizes="(min-width: 1200px) 33vw"
-              />
+              <picture>
+                <source
+                  srcset=".//imeges/box.webp 1x, ./imeges/box9@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source srcset="./imeges/box9.jpg 1x, ./imeges/box@2x.jpg 2x" />
+                <img
+                  src="./imeges/box.jpg"
+                  alt="Приложения"
+                  width="370"
+                  height="294"
+                />
+              </picture>
 
               <h3 class="do-title">Мобильные приложения</h3>
             </li>
             <li class="do-item">
-              <img
-                srcset="
-                  ./imeges/des-proect6.jpg    370w,
-                  ./imeges/des-proect6@2x.jpg 740w
-                "
-                src="./imeges/mob-proect6.jpg"
-                alt="ноутбук"
-                sizes="(min-width: 1200px) 33vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./imeges/des-proect6.webp    1x,
+                    ./imeges/des-proect6@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./imeges/des-proect6.jpg    1x,
+                    ./imeges/des-proect6@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./imeges/des-proect6.jpg"
+                  alt="Монитор"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <h3 class="do-title">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -207,21 +238,59 @@
           <h2 class="main-title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="photo"
-                srcset="
-   ./imeges/mob-photo1.jpg    450w,
-    ./imeges/mob-photo1@2x.jpg 900w
-       ./imeges/tab-photo1.jpg    354w,
-      ./imeges/tab-photo1@2x.jpg 708w
-      ./imeges/des-photo1.jpg    270w,
-       ./imeges/des-photo1@2x.jpg 540w
-                              "
-                src="./imeges/photo1.jpg"
-                alt="photo Николай Кучеренко"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px)  100vw"
-              />
-
+              <picture>
+                <source
+                  srcset="
+                    ./imeges/mob-photo1.jpg    1x,
+                    ./imeges/mob-photo1@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./imeges/mob-photo1.webp    1x,
+                    ./imeges/mob-photo1@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./imeges/des-photo1.jpg    1x,
+                    ./imeges/des-photo1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/des-photo1.webp    1x,
+                    ./images/des-photo1@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tab-photo1.jpg    1x,
+                    ./images/tab-photo1@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/tab-photo1.webp    1x,
+                    ./images/tab-photo1@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/mob-photo1.jpg"
+                  alt="Фотография Джона Смита"
+                  width="450"
+                  height="320"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="name-title">Николай Кучеренко</h3>
                 <p class="prof-item">Product Designer</p>
@@ -275,20 +344,59 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="photo"
-                srcset="
-                  ./imeges/mob-photo2.jpg    450w,
-                  ./imeges/mob-photo2@2x.jpg 900w
-                  ./imeges/tab-photo2.jpg    354w,
-                  ./imeges/tab-photo2@2x.jpg 708w
-                  ./imeges/des-photo2.jpg    270w,
-                  ./imeges/des-photo2@2x.jpg 540w
-                "
-                src="./imeges/mob-photo2.jpg"
-                alt="Ольга Иванова"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px)  100vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./imeges/mob-photo2.jpg    1x,
+                    ./imeges/mob-photo2@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./imeges/mob-photo2.webp    1x,
+                    ./imeges/mob-photo2@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./imeges/des-photo2.jpg    1x,
+                    ./imeges/des-photo2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/des-photo2.webp    1x,
+                    ./images/des-photo2@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tab-photo2.jpg    1x,
+                    ./images/tab-photo2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/tab-photo2.webp    1x,
+                    ./images/tab-photo2@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/mob-photo2.jpg"
+                  alt="Фотография Ольга Иванова"
+                  width="450"
+                  height="320"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="name-title">Ольга Иванова</h3>
                 <p class="prof-item">Frontend Developer</p>
@@ -341,20 +449,59 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="photo"
-                srcset="
-                  ./imeges/mob-photo3.jpg    450w,
-                  ./imeges/mob-photo3@2x.jpg 900w
-                  ./imeges/tab-photo3.jpg    354w,
-                  ./imeges/tab-photo3@2x.jpg 708w
-                  ./imeges/des-photo3.jpg    270w,
-                  ./imeges/des-photo3@2x.jpg 540w
-                "
-                src="./imeges/mob-photo3.jpg"
-                alt="photo Андрей Шевченко"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px)  100vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./imeges/mob-photo3.jpg    1x,
+                    ./imeges/mob-photo3@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./imeges/mob-photo3.webp    1x,
+                    ./imeges/mob-photo3@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./imeges/des-photo3.jpg    1x,
+                    ./imeges/des-photo3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/des-photo3.webp    1x,
+                    ./images/des-photo3@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tab-photo3.jpg    1x,
+                    ./images/tab-photo3@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/tab-photo3.webp    1x,
+                    ./images/tab-photo3@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/mob-photo3.jpg"
+                  alt="Фотография Андрей Шевченко"
+                  width="450"
+                  height="320"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="name-title">Андрей Шевченко</h3>
                 <p class="prof-item">Marketing</p>
@@ -407,20 +554,59 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                srcset="
-                  ./imeges/mob-photo4.jpg    450w,
-                  ./imeges/mob-photo4@2x.jpg 900w
-                  ./imeges/tab-photo4.jpg    354w,
-                  ./imeges/tab-photo4@2x.jpg 708w
-                  ./imeges/des-photo4.jpg    270w,
-                  ./imeges/des-photo4@2x.jpg 540w
-                "
-                src="./imeges/mob-photo4.jpg"
-                alt="photo Иван Николаев"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px)  100vw"
-              />
-
+              <picture>
+                <source
+                  srcset="
+                    ./imeges/mob-photo4.jpg    1x,
+                    ./imeges/mob-photo4@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./imeges/mob-photo4.webp    1x,
+                    ./imeges/mob-photo4@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./imeges/des-photo4.jpg    1x,
+                    ./imeges/des-photo4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/des-photo4.webp    1x,
+                    ./images/des-photo4@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tab-photo4.jpg    1x,
+                    ./images/tab-photo4@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/tab-photo4.webp    1x,
+                    ./images/tab-photo4@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/mob-photo4.jpg"
+                  alt="Фотография Ольга Иванова"
+                  width="450"
+                  height="320"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="name-title">Иван Николаев</h3>
                 <p class="prof-item">UI Designer</p>
