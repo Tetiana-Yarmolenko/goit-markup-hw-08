@@ -7,6 +7,9 @@
     display: flex;
     margin-right: 84px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
 }
 
 .site-nav__item {
@@ -87,18 +90,17 @@
     display: none;
   }
 }
-// Меню навігації
-// .menu-button .icon-cross {
-//   // display: none;
-// }
+Меню навігації .menu-button .icon-cross {
+  display: none;
+}
 
 .menu-button.is-open .icon-cross {
   display: block;
 }
 
-// .menu-button.is-open .icon-menu {
-//   // display: none;
-// }
+.menu-button.is-open .icon-menu {
+  display: none;
+}
 .icon-cross {
   width: 24px;
   height: 16px;
