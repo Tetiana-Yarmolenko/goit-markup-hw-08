@@ -1304,10 +1304,13 @@ input [type="checkbox"] {
 }
 
 /*текст*/
+.feature-list .feature-item {
+  margin: 15px;
+}
+
 @media screen and (min-width: 768px) {
   .feature-list .feature-item {
     width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
   }
 }
 
@@ -1410,12 +1413,12 @@ input [type="checkbox"] {
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+  margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .team__item {
     width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
   }
 }
 
@@ -1474,6 +1477,7 @@ input [type="checkbox"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
+  margin: 15px;
 }
 
 @media screen and (max-width: 767px) {
