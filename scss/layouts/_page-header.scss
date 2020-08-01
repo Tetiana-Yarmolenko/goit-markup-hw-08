@@ -21,9 +21,6 @@
   }
 }
 
-// .contacts__item + .contacts__item {
-//   margin-left: 30px;
-// }
 .contacts__item {
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
