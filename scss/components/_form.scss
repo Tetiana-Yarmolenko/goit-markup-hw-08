@@ -35,7 +35,7 @@
   top: 50%;
   left: 42px;
   transform: translateY(-50%);
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
 
   transition: transform 250ms $timing-function, color 250ms $timing-function;
@@ -139,7 +139,7 @@ input [type="checkbox"] {
 }
 /*Оформлення чекбокса*/
 .checkbox-form {
-  // margin-bottom: 30px;
+  vertical-align: middle;
   @media screen and (min-width: 1200px) {
     @include centeredflex($type: flex);
   }
@@ -148,7 +148,10 @@ input [type="checkbox"] {
     display: inline-block;
     width: 16px;
     height: 15px;
-    margin-right: 8px;
+    margin-right: 3px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 8px;
+    }
 
     border: 2px solid $primary-bleak-color;
     border-radius: 4px;
