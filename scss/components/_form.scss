@@ -139,8 +139,7 @@ input [type="checkbox"] {
 }
 /*Оформлення чекбокса*/
 .checkbox-form {
-  vertical-align: middle;
-  @media screen and (min-width: 1200px) {
+    vertical-align: middle;
     @include centeredflex($type: flex);
   }
 
