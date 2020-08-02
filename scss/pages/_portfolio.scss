@@ -65,10 +65,10 @@
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   width: 100%;
+  margin: 15px;
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {

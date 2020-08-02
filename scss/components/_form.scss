@@ -3,13 +3,12 @@
   padding: 40px;
   background-color: $primary-white-color;
   transition: transform 250ms $timing-function;
+  min-width: 450px;
+  min-height: 609px;
 
   @media screen and (max-width: 767px) {
     position: relative;
     margin: auto;
-    max-width: 450px;
-    width: 100%;
-    min-height: 609px;
   }
 
   @media screen and (min-width: 768px) {
@@ -139,28 +138,28 @@ input [type="checkbox"] {
 }
 /*Оформлення чекбокса*/
 .checkbox-form {
-    vertical-align: middle;
-    @include centeredflex($type: flex);
-  }
-
-  .check-icon {
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    margin-right: 3px;
-    @media screen and (min-width: 1200px) {
-      margin-right: 8px;
-    }
-
-    border: 2px solid $primary-bleak-color;
-    border-radius: 4px;
-
-    transition: transform 250ms $timing-function;
-  }
+  vertical-align: middle;
+  @include centeredflex($type: flex);
 }
+
+.check-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 3px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 8px;
+  }
+
+  border: 2px solid $primary-bleak-color;
+  border-radius: 4px;
+
+  transition: transform 250ms $timing-function;
+}
+
 .checkbox-form .checkbox:checked + .check-icon {
   background-color: $akcent-color;
-  background-image: url(../imeges/berd.svg);
+  background-image: url(../images/berd.svg);
   border-color: $akcent-color;
   background-size: contain;
   background-origin: border-box;
